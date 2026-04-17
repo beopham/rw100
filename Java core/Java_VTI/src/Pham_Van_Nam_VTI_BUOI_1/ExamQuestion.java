@@ -1,0 +1,16 @@
+package Pham_Van_Nam_VTI_BUOI_1;
+
+public class ExamQuestion {
+    Exam exam;         // Đối tượng Exam
+    Question question; // Đối tượng Question
+
+    public void show() {
+        System.out.println("Exam Question Connection");
+
+        // In ra ID của Exam và Question
+        System.out.println("ExamID: " + exam.examId);
+        System.out.println("QuestionID: " + question.questionId);
+
+        System.out.println("======================");
+    }
+}
