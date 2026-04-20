@@ -8,16 +8,16 @@ public class Program {
 
         // --- PHẦN 1: DEPARTMENT ---
         Department department1 = new Department();
-        department1.DepartmentID = 1;
-        department1.DepartmentName = "Sale";
+        department1.departmentID = 1;
+        department1.departmentName = "Sale";
 
         Department department2 = new Department();
-        department2.DepartmentID = 2;
-        department2.DepartmentName = "Marketing";
+        department2.departmentID = 2;
+        department2.departmentName = "Marketing";
 
         Department department3 = new Department();
-        department3.DepartmentID = 3;
-        department3.DepartmentName = "Director";
+        department3.departmentID = 3;
+        department3.departmentName = "Director";
 
         System.out.println("--- Thông tin phòng ban ---");
         department1.show();

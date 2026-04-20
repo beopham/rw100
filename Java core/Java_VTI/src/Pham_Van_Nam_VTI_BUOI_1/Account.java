@@ -12,7 +12,7 @@ public class Account {
         System.out.println("Account Information ");
         System.out.println("AccountID: " + AccountID);
         System.out.println("Username: "  + Username);
-        System.out.println("Department"  + department.DepartmentID);
+        System.out.println("Department"  + department.departmentID);
         System.out.println("Position"    + position.PositionID);
         System.out.println("Create Date: " + localDate);
         System.out.println("======================");
