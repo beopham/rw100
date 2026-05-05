@@ -5,26 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4bab0aa-47ea-441f-b7ef-fa7a56f079f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_1_Constructor/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_1_Constructor/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_1_Constructor/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_1_Constructor/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_1_Constructor/PositionName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/backend/Excercise1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/backend/Excercise2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/backend/Excercise3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/PositionName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/frontend/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/frontend/Program1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/frontend/Program2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/frontend/Program3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/backend/Excercise1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/backend/Excercise2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/backend/Excercise3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/entity/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/entity/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/entity/PositionName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/frontend/Program1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/frontend/Program2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/frontend/Program3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_4_Encapsulation/Question_1/Entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_4_Encapsulation/Question_1/Front_end/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_4_Encapsulation/Question_2/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_4_Encapsulation/Question_2/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_4_Encapsulation/Question_2/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_1_2/Backend/QuanLiCanBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_1_2/Entity/CanBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_1_2/Entity/CongNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_1_2/Entity/KySu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_1_2/Entity/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_1_2/Enums/GioiTinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_1_2/Frontend/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_3/Entity/HighSchoolStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_3/Entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_3/Entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_3/Frontend/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_4/Backend/QuanLiTaiLieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_4/Entity/Bao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_4/Entity/Sach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_4/Entity/TaiLieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_4/Entity/TapChi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_5_Inheritance/Question_4/Frontend/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_3/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_3/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_3/Excercise_4_String/Excercise_1_2_3_4_5_6_7_8_9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_1_Constructor/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_1_Constructor/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/backend/Excercise2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/backend/Excercise2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/backend/Excercise3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/backend/Excercise3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java core/out/production/rw100/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/frontend/Demo.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +56,8 @@
       <list>
         <option value="Kotlin Class" />
         <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -66,12 +88,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Account.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Demo.executor&quot;: &quot;Run&quot;,
     &quot;Application.Department.executor&quot;: &quot;Run&quot;,
     &quot;Application.Excercise_1_2_3_4.executor&quot;: &quot;Run&quot;,
     &quot;Application.Excercise_1_2_3_4_5_6_7_8_9.executor&quot;: &quot;Run&quot;,
     &quot;Application.Exercise_1.executor&quot;: &quot;Run&quot;,
     &quot;Application.Exercise_5.executor&quot;: &quot;Run&quot;,
     &quot;Application.Exercise_5_bai_7.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Menu.executor&quot;: &quot;Run&quot;,
     &quot;Application.ok.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -81,7 +105,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/rw100/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_2_Package/com/vti/entity&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/rw100/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -90,18 +114,32 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\rw100\Java core\Java_VTI\src\Bai_Tap_Buoi_4\Exercise_3_Access_Modifier" />
       <recent name="D:\rw100\Java core\Java_VTI\src\Bai_Tap_Buoi_4\Exercise_2_Package\com\vti\entity" />
       <recent name="D:\rw100\Java core\Java_VTI\src\Bai_Tap_Buoi_4" />
       <recent name="D:\rw100\Java core\Java_VTI\src\Bai_Tap_Buoi_3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Account">
+  <component name="RunManager" selected="Application.Menu">
     <configuration name="Account" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Bai_Tap_Buoi_4.Exercise_1_Constructor.Account" />
       <module name="rw100" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Bai_Tap_Buoi_4.Exercise_1_Constructor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bai_Tap_Buoi_4.Exercise_4_Encapsulation.Question_1.Front_end.Demo" />
+      <module name="rw100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bai_Tap_Buoi_4.Exercise_4_Encapsulation.Question_1.Front_end.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,8 +173,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bai_Tap_Buoi_4.Exercise_5_Inheritance.Question_1_2.Frontend.Menu" />
+      <module name="rw100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Bai_Tap_Buoi_4.Exercise_5_Inheritance.Question_1_2.Frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Menu" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Account" />
         <item itemvalue="Application.Exercise_5" />
         <item itemvalue="Application.Exercise_5_bai_7" />
@@ -157,11 +210,29 @@
       <workItem from="1777546620597" duration="18000" />
       <workItem from="1777774427867" duration="3717000" />
       <workItem from="1777789932664" duration="5100000" />
-      <workItem from="1777863547462" duration="817000" />
+      <workItem from="1777863547462" duration="6358000" />
+      <workItem from="1777878436469" duration="652000" />
+      <workItem from="1777896923441" duration="9946000" />
+      <workItem from="1777997946979" duration="3878000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Java core/Java_VTI/src/Bai_Tap_Buoi_4/Exercise_3_Access_Modifier/entity/Department.java</url>
+          <line>19</line>
+          <properties class="Bai_Tap_Buoi_4.Exercise_3_Access_Modifier.entity.Department" method="setDepartmentName">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
