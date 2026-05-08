@@ -120,11 +120,11 @@ public class Management {
                 }
             }
 
-            System.out.println("Danh sach positions để bạn chọnn");
+            System.out.println("Danh sach chức vụ để bạn chọnn");
             for (Position po : positionList) {
                 po.showInfo();
             }
-            System.out.println("Nhập vào id phòng ban mà bạn muốn ");
+            System.out.println("Nhập vào id chức vụ mà bạn muốn ");
             int idpo = sc.nextInt();
             sc.nextLine();
             Position chonIDpo = null;
@@ -154,7 +154,7 @@ public class Management {
 
     public void xemdanhsachpo() {
         if (positionList.isEmpty()) {
-            System.out.println("Position Chưa có danh sách");
+            System.out.println("Chưa có danh sách chức vụ");
             return;
         }
         for (Position position : positionList) {
@@ -182,7 +182,7 @@ public class Management {
                 account.showInfo();
             }
         }
-        if(istimKiem)
+        if(istimKiem==false)
         {
             System.out.println("K có acc mà bạn tìm kiếm");
         }
@@ -197,7 +197,7 @@ public class Management {
                 account.showInfo();
             }
         }
-        if(istimKiem)
+        if(istimKiem==false)
         {
             System.out.println("K có acc mà bạn tìm kiếm");
         }
