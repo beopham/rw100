@@ -1,6 +1,5 @@
 package Bai_Tap_Buoi_4.Exercise_5_Inheritance.Question_4.Entity;
 
-import Bai_Tap_Buoi_4.Exercise_5_Inheritance.Question_4.Service.Showinfor;
 
 public class Bao extends TaiLieu {
     private int ngayPhatHanh;
