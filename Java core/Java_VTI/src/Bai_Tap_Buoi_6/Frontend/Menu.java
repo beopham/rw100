@@ -18,11 +18,7 @@ public class Menu {
             System.out.println("6. Xem phòng ban có từ 2 nhân viên trở lên");
             System.out.println("0. Thoát chương trình");
             System.out.print("Mời bạn chọn chức năng (0-6): ");
-            if (!sc.hasNextInt()) {
-                System.out.println("Lỗi: Vui lòng nhập số!");
-                sc.nextLine();
-                continue;
-            }
+        
             String choice = sc.nextLine();
             if (choice.equals("1")) {
                 management.testShowAllAccount();
