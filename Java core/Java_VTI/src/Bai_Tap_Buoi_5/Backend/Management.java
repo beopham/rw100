@@ -182,11 +182,11 @@ public class Management {
                 account.showInfo();
             }
         }
-        if(istimKiem==false)
-        {
+        if (istimKiem == false) {
             System.out.println("K có acc mà bạn tìm kiếm");
         }
     }
+
     public void timkiemacctheotenpchucvu() {
         boolean istimKiem = false;
         System.out.println("Nhập vào tên chức vụ");
@@ -197,22 +197,18 @@ public class Management {
                 account.showInfo();
             }
         }
-        if(istimKiem==false)
-        {
+        if (istimKiem == false) {
             System.out.println("K có acc mà bạn tìm kiếm");
         }
     }
-    public void xoaaccfullname()
-    {
+
+    public void xoaaccfullname() {
         System.out.println("Nhập vào full name");
         String fullnames = sc.nextLine();
-        boolean isXoa=accountList.removeIf(account -> account.getFullName().equalsIgnoreCase(fullnames));
-        if(isXoa==true)
-        {
+        boolean isXoa = accountList.removeIf(account -> account.getFullName().equalsIgnoreCase(fullnames));
+        if (isXoa == true) {
             System.out.println("Đã xóa thành công");
-        }
-        else
-        {
+        } else {
             System.out.println("K xóa được");
         }
     }
