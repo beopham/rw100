@@ -102,6 +102,7 @@ public class AccountTest {
             System.out.println("Thêm k thành công");
         }
     }
+
     public void updateAccount() {
         System.out.println("--- CẬP NHẬT TÀI KHOẢN ---");
         System.out.print("Nhập ID tài khoản cần sửa: ");
@@ -143,32 +144,38 @@ public class AccountTest {
         account_update.setPosition(position);
         account_update.setUsername(username);
         account_update.setFullName(fullName);
-        if (accountController.Update(account_update))
-        {
+        if (accountController.Update(account_update)) {
             System.out.println("Cập nhật tài khoản thành công!");
-        }
-        else
-        {
+        } else {
             System.out.println("Cập nhật thất bại!");
         }
     }
+
     public void deleteAccount() {
         System.out.println("--- XÓA TÀI KHOẢN ---");
-        System.out.print("Nhập ID tài khoản cần xóa: ");
-        int idacc = sc.nextInt();
-        sc.nextLine();
-        // kiểm tra id
-        Account Account_delete = accountController.selectByid(idacc);
-        if (Account_delete == null) {
-            System.out.println("Không có id cần xóa");
-            return;
+        int idacc;
+        while (true) {
+            System.out.print("Nhập ID tài khoản cần xóa: ");
+            idacc = sc.nextInt();
+            sc.nextLine();
+            if (idacc <= 0) {
+                System.out.println("bạn phải nhập id lớn hơn 0");
+                continue;
+            }
+            if (!accountController.checkAccountIdExist(idacc)) {
+                System.out.println("id chưa tồn tại");
+                continue;
+            }
+            break;
         }
+
         if (accountController.Delete(idacc)) {
             System.out.println("xóa tài khoản thành công!");
         } else {
             System.out.println("xóa thất bại!");
         }
     }
+
     public void testShowAllAccount() {
         System.out.println("---------- DANH SÁCH TẤT CẢ TÀI KHOẢN ----------");
         List<Account> list = accountController.findAll();
