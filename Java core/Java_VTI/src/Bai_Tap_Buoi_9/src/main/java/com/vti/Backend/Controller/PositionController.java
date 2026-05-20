@@ -3,6 +3,7 @@ package com.vti.Backend.Controller;
 import com.vti.Backend.Service.IPositionService;
 import com.vti.Backend.Service.Impl.PositionServiceImpl;
 import com.vti.Entity.Position;
+import com.vti.Enums.PositionName;
 
 import java.util.List;
 
@@ -26,5 +27,14 @@ public class PositionController {
 
     public Position selectByid(int id) {
         return iPositionService.selectByid(id);
+    }
+    public boolean checkPositionNameExist(PositionName positionName) {
+        return iPositionService.checkPositionNameExist(positionName);
+    }
+    public boolean checkId(int id) {
+        return iPositionService.checkId(id);
+    }
+    public boolean checkExistNameAndIdNot(PositionName positionName, int id) {
+        return  iPositionService.checkExistNameAndIdNot(positionName,id);
     }
 }

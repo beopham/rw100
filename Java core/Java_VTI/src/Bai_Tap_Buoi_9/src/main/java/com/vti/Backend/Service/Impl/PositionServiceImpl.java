@@ -4,6 +4,7 @@ import com.vti.Backend.Repository.IPositionReponsitory;
 import com.vti.Backend.Repository.Impl.PositionReponsitoryImpl;
 import com.vti.Backend.Service.IPositionService;
 import com.vti.Entity.Position;
+import com.vti.Enums.PositionName;
 
 import java.util.List;
 
@@ -33,4 +34,21 @@ public class PositionServiceImpl implements IPositionService {
     public Position selectByid(int id) {
         return iPositionReponsitory.selectByid(id);
     }
+
+    @Override
+    public boolean checkPositionNameExist(PositionName positionName) {
+        return iPositionReponsitory.checkPositionNameExist(positionName);
+    }
+
+    @Override
+    public boolean checkId(int id) {
+        return iPositionReponsitory.checkId(id);
+    }
+
+    @Override
+    public boolean checkExistNameAndIdNot(PositionName positionName, int id) {
+        return iPositionReponsitory.checkExistNameAndIdNot(positionName,id);
+    }
+
+
 }

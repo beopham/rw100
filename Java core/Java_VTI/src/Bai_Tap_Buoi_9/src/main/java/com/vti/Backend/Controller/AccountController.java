@@ -27,4 +27,15 @@ public class AccountController {
     public Account selectByid(int id) {
         return iAccountService.selectByid(id);
     }
+
+    public boolean checkUsernameExist(String username) {
+        return iAccountService.checkUsernameExist(username);
+    }
+
+    public boolean checkEmailExist(String email) {
+        return iAccountService.checkEmailExist(email);
+    }
+    public boolean checkAccountIdExist(int id) {
+        return iAccountService.checkAccountIdExist(id);
+    }
 }

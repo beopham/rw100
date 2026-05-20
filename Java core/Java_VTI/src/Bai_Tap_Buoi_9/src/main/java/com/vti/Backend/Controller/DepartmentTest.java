@@ -23,8 +23,25 @@ public class DepartmentTest {
     }
     public void insertDepartment()
     {
-        System.out.println("Nhập vào tên phòng ban");
-        String tenpb=sc.nextLine();
+        String tenpb ="";
+        while (true)
+        {
+            System.out.println("Nhập vào tên phòng ban");
+            tenpb=sc.nextLine();
+            if(tenpb==null || tenpb.trim().isEmpty())
+            {
+                System.out.println("K đc để tên trống phòng ban");
+                continue;
+            }
+            tenpb = tenpb.trim();
+            if (departmentController.checkName(tenpb))
+            {
+                System.out.println("Tên phòng ban tồn tại rồi");
+                continue;
+            }
+            break;
+        }
+
         Department department=new Department(tenpb);
         boolean them= departmentController.Insert(department);
         if(them==true)
@@ -38,9 +55,26 @@ public class DepartmentTest {
     }
     public void deleteDepartment()
     {
-        System.out.println("Nhập vào tên id phòng ban");
-        int idpb=sc.nextInt();
-        sc.nextLine();
+        int idpb;
+        while (true)
+        {
+            System.out.println("Nhập vào tên id phòng ban");
+            idpb=sc.nextInt();
+            sc.nextLine();
+            if(idpb<0)
+            {
+                System.out.println("Bạn nên nhập id lớn hơn 0");
+                continue;
+            }
+            if(!departmentController.checkId(idpb))
+            {
+                System.out.println("ID k tồn tại");
+                continue;
+            }
+
+            // ID hợp lệ và tồn tại rồi -> Thoát khỏi vòng lặp while ngay lập tức để xuống dòng xóa
+            break;
+        }
         boolean them= departmentController.Delete(idpb);
         if(them==true)
         {
@@ -53,17 +87,44 @@ public class DepartmentTest {
     }
     public void updateDepartment()
     {
-        System.out.println("Nhập vào tên id phòng ban");
-        int idpb=sc.nextInt();
-        sc.nextLine();
-        Department department=departmentController.selectByid(idpb);
-        if(department==null)
+        int idpb;
+        String tenpb;
+        while (true)
         {
-            System.out.println("k có phòng ban chứa id");
-            return;
+            System.out.println("Nhập vào tên id phòng ban");
+            idpb=sc.nextInt();
+            sc.nextLine();
+            if(idpb<0)
+            {
+                System.out.println("Bạn nên nhập id lớn hơn 0");
+                continue;
+            }
+            if(!departmentController.checkId(idpb))
+            {
+                System.out.println("ID k tồn tại");
+                continue;
+            }
+            // ID hợp lệ và tồn tại rồi -> Thoát khỏi vòng lặp while ngay lập tức để xuống dòng xóa
+            break;
         }
-        System.out.println("Nhập vào tên phòng ban");
-        String tenpb=sc.nextLine();
+        while (true)
+        {
+            System.out.println("Nhập vào tên phòng ban");
+            tenpb=sc.nextLine();
+            if(tenpb==null || tenpb.trim().isEmpty())
+            {
+                System.out.println("K đc để tên trống phòng ban");
+                continue;
+            }
+            tenpb = tenpb.trim();
+            if(departmentController.checkExistNameAndIdNot(tenpb,idpb))
+            {
+                System.out.println("Tên phòng ban này đã tồn tại ở một phòng ban khác rồi! Vui lòng nhập tên khác.");
+                continue;
+            }
+            break;
+        }
+        Department department=departmentController.selectByid(idpb);
         department.setDepartmentName(tenpb);
         department.setDepartmentId(idpb);
         if(departmentController.Update(department))

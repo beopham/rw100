@@ -10,5 +10,7 @@ public interface IDepartmentService {
    public boolean Update(Department department);
    public boolean Delete(int id);
    public Department selectByid(int id);
-
+   public boolean checkId(int id);
+   public boolean checkName(String name);
+   public boolean checkExistNameAndIdNot(String name, int id);
 }

@@ -40,4 +40,20 @@ public class DepartmentServiceImpl implements IDepartmentService {
         Department department=departmentRepository.selectByid(id);
         return department;
     }
+
+    @Override
+    public boolean checkId(int id) {
+        return departmentRepository.checkId(id);
+    }
+
+    @Override
+    public boolean checkName(String name) {
+        return departmentRepository.checkName(name);
+    }
+
+    @Override
+    public boolean checkExistNameAndIdNot(String name, int id) {
+        return departmentRepository.checkExistNameAndIdNot(name,id);
+    }
+
 }

@@ -159,4 +159,64 @@ public class AccountReponsitoryImpl implements IAccountReponsitory {
         return account;
 
     }
+
+    @Override
+    public boolean checkUsernameExist(String username) {
+        boolean check=false;
+        try {
+            Connection con = JDBCUtil.getConnection();
+            String sql = "select * from `account` WHERE username = ?" ;
+            PreparedStatement preparedStatement = con.prepareStatement(sql);
+            preparedStatement.setString(1,username);
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check;
+    }
+
+    @Override
+    public boolean checkEmailExist(String email) {
+        boolean check=false;
+        try {
+            Connection con = JDBCUtil.getConnection();
+            String sql = "select * from `account` WHERE email = ?" ;
+            PreparedStatement preparedStatement = con.prepareStatement(sql);
+            preparedStatement.setString(1,email);
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check;
+    }
+
+    @Override
+    public boolean checkAccountIdExist(int id) {
+        boolean check=false;
+        try {
+            Connection con = JDBCUtil.getConnection();
+            String sql = "select * from `account` WHERE account_id = ?";
+            PreparedStatement preparedStatement = con.prepareStatement(sql);
+            preparedStatement.setInt(1,id);
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check;
+    }
 }

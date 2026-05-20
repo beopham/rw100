@@ -11,4 +11,7 @@ public interface IAccountReponsitory {
     public boolean Update(Account account);
     public boolean Delete(int id);
     public Account selectByid(int id);
+    public boolean checkUsernameExist(String username);
+    public boolean checkEmailExist(String email);
+    boolean checkAccountIdExist(int id);
 }

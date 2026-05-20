@@ -29,6 +29,7 @@ public class PositionReponsitoryImpl implements IPositionReponsitory {
                 Position position = new Position(positionId, positionName);
                 positionList.add(position);
             }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -63,8 +64,8 @@ public class PositionReponsitoryImpl implements IPositionReponsitory {
         try {
             Connection connection = JDBCUtil.getConnection();
             String sql = "UPDATE `rw100_testing_system`.`position` " +
-                    "SET `position_name` = ? " +
-                    "WHERE `position_id` = ?";
+                        "SET `position_name` = ? " +
+                        "WHERE `position_id` = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, position.getPositionName().toString());
             preparedStatement.setInt(2, position.getPositionId());
@@ -121,5 +122,67 @@ public class PositionReponsitoryImpl implements IPositionReponsitory {
             e.printStackTrace();
         }
         return position;
+    }
+
+    @Override
+    public boolean checkPositionNameExist(PositionName positionName) {
+        boolean check=false;
+        try {
+            Connection con = JDBCUtil.getConnection();
+            String sql = "select * from `position` WHERE position_name = ?";
+            PreparedStatement preparedStatement = con.prepareStatement(sql);
+            preparedStatement.setString(1,positionName.toString());
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check;
+    }
+
+    @Override
+    public boolean checkId(int id) {
+        boolean check=false;
+        try {
+            Connection con = JDBCUtil.getConnection();
+            String sql = "select * from `position` WHERE position_id = ?";
+            PreparedStatement preparedStatement = con.prepareStatement(sql);
+            preparedStatement.setInt(1,id);
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check;
+    }
+
+    @Override
+    public boolean checkExistNameAndIdNot(PositionName positionName, int id) {
+        boolean check=false;
+        try {
+            Connection con = JDBCUtil.getConnection();
+            String sql = "select * from `position` WHERE position_name = ? " +
+                         "AND position_id != ?";
+            PreparedStatement preparedStatement = con.prepareStatement(sql);
+            preparedStatement.setString(1, positionName.toString());
+            preparedStatement.setInt(2,id);
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check;
     }
 }

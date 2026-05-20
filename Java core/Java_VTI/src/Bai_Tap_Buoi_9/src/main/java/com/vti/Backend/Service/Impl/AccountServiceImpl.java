@@ -8,7 +8,8 @@ import com.vti.Entity.Account;
 import java.util.List;
 
 public class AccountServiceImpl implements IAccountService {
-    private IAccountReponsitory iAccountReponsitory=new AccountReponsitoryImpl();
+    private IAccountReponsitory iAccountReponsitory = new AccountReponsitoryImpl();
+
     @Override
     public List<Account> findAll() {
         return iAccountReponsitory.findAll();
@@ -32,5 +33,20 @@ public class AccountServiceImpl implements IAccountService {
     @Override
     public Account selectByid(int id) {
         return iAccountReponsitory.selectByid(id);
+    }
+
+    @Override
+    public boolean checkUsernameExist(String username) {
+        return iAccountReponsitory.checkUsernameExist(username);
+    }
+
+    @Override
+    public boolean checkEmailExist(String email) {
+        return iAccountReponsitory.checkEmailExist(email);
+    }
+
+    @Override
+    public boolean checkAccountIdExist(int id) {
+        return iAccountReponsitory.checkAccountIdExist(id);
     }
 }

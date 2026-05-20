@@ -6,8 +6,18 @@ import java.util.List;
 
 public interface IDepartmentRepository {
     public List<Department> findAll();
+
     public boolean Insert(Department department);
+
     public boolean Update(Department department);
+
     public boolean Delete(int id);
+
     public Department selectByid(int id);
+
+    public boolean checkId(int id);
+
+    public boolean checkName(String name);
+
+    public boolean checkExistNameAndIdNot(String name, int id);
 }

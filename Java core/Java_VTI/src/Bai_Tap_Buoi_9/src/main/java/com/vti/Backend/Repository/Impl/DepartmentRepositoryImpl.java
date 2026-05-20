@@ -13,7 +13,6 @@ import java.util.List;
 
 public class DepartmentRepositoryImpl implements IDepartmentRepository {
 
-
     @Override
     public List<Department> findAll() {
         List<Department> departmentList=new ArrayList<>();
@@ -30,7 +29,7 @@ public class DepartmentRepositoryImpl implements IDepartmentRepository {
                 Department department=new Department(departmentId,departmentName);
                 departmentList.add(department);
             }
-            JDBCUtil.closeConnection(con);
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -53,7 +52,7 @@ public class DepartmentRepositoryImpl implements IDepartmentRepository {
             {
                 ketqua=true;
             }
-            JDBCUtil.closeConnection(con);
+            JDBCUtil.closeConnection(con,preparedStatement);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -76,7 +75,7 @@ public class DepartmentRepositoryImpl implements IDepartmentRepository {
             {
                 ketqua=true;
             }
-            JDBCUtil.closeConnection(con);
+            JDBCUtil.closeConnection(con,preparedStatement);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -98,7 +97,7 @@ public class DepartmentRepositoryImpl implements IDepartmentRepository {
             {
                 ketqua=true;
             }
-            JDBCUtil.closeConnection(con);
+            JDBCUtil.closeConnection(con,preparedStatement);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -120,11 +119,73 @@ public class DepartmentRepositoryImpl implements IDepartmentRepository {
                 String departmentName=rs.getString("department_name");
                 department=new Department(departmentId,departmentName);
             }
-            JDBCUtil.closeConnection(con);
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return department;
 
     }
+
+    @Override
+    public boolean checkId(int id) {
+        boolean check_id =false;
+        try {
+            Connection con= JDBCUtil.getConnection();
+            String sql = "SELECT * FROM department WHERE department_id = ?";
+            PreparedStatement preparedStatement= con.prepareStatement(sql);
+            preparedStatement.setInt(1,id);
+            ResultSet rs= preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check_id=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check_id;
+    }
+    @Override
+    public boolean checkName(String name) {
+        boolean check_name =false;
+        try {
+            Connection con= JDBCUtil.getConnection();
+            String sql = "SELECT * FROM department WHERE department_name = ?";
+            PreparedStatement preparedStatement= con.prepareStatement(sql);
+            preparedStatement.setString(1,name);
+            ResultSet rs= preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check_name=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check_name;
+    }
+
+    @Override
+    public boolean checkExistNameAndIdNot(String name, int id) {
+        boolean check_name_id =false;
+        try {
+            Connection con= JDBCUtil.getConnection();
+            String sql = "select * from department where department_name =?" +
+                         " and department_id !=?";
+            PreparedStatement preparedStatement= con.prepareStatement(sql);
+            preparedStatement.setString(1,name);
+            preparedStatement.setInt(2,id);
+            ResultSet rs= preparedStatement.executeQuery();
+            if(rs.next())
+            {
+                check_name_id=true;
+            }
+            JDBCUtil.closeConnection(con,preparedStatement,rs);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check_name_id;
+    }
+
 }
