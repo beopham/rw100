@@ -23,7 +23,7 @@ public class AccountFunction {
                     accountTest.testShowAllAccount();
                     break;
                 case "2":
-                    accountTest.ínsertAccount();
+                    accountTest.insertAccount();
                     break;
                 case "3":
                     accountTest.updateAccount();
