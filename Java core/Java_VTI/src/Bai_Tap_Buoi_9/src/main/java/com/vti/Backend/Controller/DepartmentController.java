@@ -45,5 +45,8 @@ public class DepartmentController {
     public boolean checkExistNameAndIdNot(String name, int id) {
         return iDepartmentService.checkExistNameAndIdNot(name,id);
     }
+    public boolean importDepartmentFromCSV(String pathName) {
+        return iDepartmentService.importDepartmentFromCSV(pathName);
+    }
 
 }

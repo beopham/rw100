@@ -4,6 +4,9 @@ import com.vti.Backend.Repository.IDepartmentRepository;
 import com.vti.Entity.Department;
 import com.vti.Utils.JDBCUtil;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -206,5 +209,39 @@ public class DepartmentRepositoryImpl implements IDepartmentRepository {
             JDBCUtil.closeConnection(con, preparedStatement, rs);
         }
         return check_name_id;
+    }
+
+    //    pathName = "D:/rw100/Java core/Java_VTI/src/CSV/department_name.csv";
+    @Override
+    public boolean importDepartmentFromCSV(String pathName) {
+         boolean importfile=false;
+
+        if (!pathName.endsWith(".csv")) {
+            System.out.println("Lỗi: File được chọn không phải là file CSV!");
+            return false; // Phải trả về false vì kiểu hàm là boolean
+        }
+        try (BufferedReader rd = new BufferedReader(new FileReader(pathName))) {
+            String line;
+            while ((line= rd.readLine()) !=null)
+            {
+                System.out.println(line);
+                String danhsachtenphongban[]=line.split(",");
+                String tenpb=danhsachtenphongban[0];
+                Department department=new Department(tenpb);
+                boolean ketqua=Insert(department);
+                if(ketqua)
+                {
+                   importfile=true;
+                }
+
+            }
+
+        } catch (Exception e) {
+            System.out.println("Lỗi khi đọc file: " + e.getMessage());
+            e.printStackTrace();
+            return  false;
+        }
+
+        return importfile;
     }
 }

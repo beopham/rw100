@@ -49,4 +49,9 @@ public class AccountServiceImpl implements IAccountService {
     public boolean checkAccountIdExist(int id) {
         return iAccountReponsitory.checkAccountIdExist(id);
     }
+
+    @Override
+    public boolean importAccountFromCSV(String pathName) {
+        return iAccountReponsitory.importAccountFromCSV(pathName);
+    }
 }

@@ -189,6 +189,34 @@ public class AccountTest {
         }
         System.out.println("------------------------------------------------");
     }
+    public void importAccountFromCSV() {
+        String duongan = "";
+        while (true) {
+            System.out.println("Nhập vào đường dẫn file CSV (ví dụ: D:/data/department.csv):");
+            duongan = sc.nextLine();
+            if (duongan == null || duongan.isEmpty()) {
+                System.out.println("Đường dẫn k đc bỏ trống");
+                continue;
+            }
+            duongan = duongan.trim();
+            // Bạn có thể bẫy lỗi đuôi file ngay tại đây hoặc để bên tầng Service xử lý như cũ đều được
+            if (!duongan.endsWith(".csv"))
+            {
+                System.out.println("Lỗi: File phải có định dạng đuôi là .csv!");
+                continue;
+            }
+            break;
+        }
 
+        if(accountController.importAccountFromCSV(duongan))
+        {
+            System.out.println("Thêm account thành công");
+        }
+        else
+        {
+            System.out.println("thêm chưa được");
+        }
+
+    }
 }
 

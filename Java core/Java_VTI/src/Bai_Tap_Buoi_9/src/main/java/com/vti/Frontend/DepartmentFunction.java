@@ -14,7 +14,8 @@ public class DepartmentFunction {
             System.out.println("2. Thêm mới phòng ban");
             System.out.println("3. Cập nhật thông tin phòng ban");
             System.out.println("4. Xóa phòng ban");
-            System.out.println("5. Thoát");
+            System.out.println("5. import file csv phòng ban");
+            System.out.println("6. Thoát");
             System.out.print("Mời bạn chọn chức năng (1-5): ");
 
             String choice = scanner.nextLine();
@@ -32,6 +33,9 @@ public class DepartmentFunction {
                     departmentTest.deleteDepartment();
                     break;
                 case "5":
+                    departmentTest.importDepartmentFromCSV();
+                    break;
+                case "6":
                     System.out.println("Đang thoát chương trình... Tạm biệt!");
                     return;
                 default:

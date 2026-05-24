@@ -38,4 +38,7 @@ public class AccountController {
     public boolean checkAccountIdExist(int id) {
         return iAccountService.checkAccountIdExist(id);
     }
+    public boolean importAccountFromCSV(String pathName) {
+        return iAccountService.importAccountFromCSV(pathName);
+    }
 }

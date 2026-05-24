@@ -13,4 +13,5 @@ public interface IDepartmentService {
    public boolean checkId(int id);
    public boolean checkName(String name);
    public boolean checkExistNameAndIdNot(String name, int id);
+   public  boolean importDepartmentFromCSV(String pathName);
 }

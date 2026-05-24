@@ -13,5 +13,6 @@ public interface IAccountService {
     public Account selectByid(int id);
     public boolean checkUsernameExist(String username);
     public boolean checkEmailExist(String email);
-    boolean checkAccountIdExist(int id);
+    public boolean checkAccountIdExist(int id);
+    public boolean importAccountFromCSV(String pathName);
 }

@@ -56,4 +56,9 @@ public class DepartmentServiceImpl implements IDepartmentService {
         return departmentRepository.checkExistNameAndIdNot(name,id);
     }
 
+    @Override
+    public boolean importDepartmentFromCSV(String pathName) {
+        return departmentRepository.importDepartmentFromCSV(pathName);
+    }
+
 }
