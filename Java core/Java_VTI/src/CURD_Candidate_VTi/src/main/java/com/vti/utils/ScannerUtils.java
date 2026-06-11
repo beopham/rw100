@@ -15,7 +15,7 @@ public class ScannerUtils {
                 System.out.println("mời bạn nhập lại");
                 continue;
             }
-            String regrex = "^[a-zA-Z\\s]+$";
+             String regex = "^[\\p{L} ]+$";
             if (ten.matches(regrex)) {
                 return ten;
             } else {
